@@ -20,7 +20,7 @@ int draw()
             else 
             {
                 if(i==x && j==y)
-                    printf("^");
+                    printf("!");
                 else if(i==fx && j==fy)
                     printf("*");
                 else    

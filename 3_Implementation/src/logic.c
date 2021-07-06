@@ -3,11 +3,11 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <unistd.h>
-int score,h,w,gover;
-int x,y,fx,fy,flag;
+int score;
+int x,y,flag;
 int logic()
 {
-    sleep(1);
+    sleep(0.5);
     switch(flag)
     {
         case 1:

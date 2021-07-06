@@ -1,3 +1,4 @@
+//to provide direction for the snake 
 #include "fun.h"
 #include <stdio.h>
 #include <stdlib.h>

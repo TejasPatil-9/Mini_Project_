@@ -1,3 +1,4 @@
+// to give fruit at different location
 #include "fun.h"
 #include <stdlib.h>
 #include <conio.h>

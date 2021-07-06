@@ -110,7 +110,7 @@ void logic()
 }
 int main()
 {
-    int m,n;
+    //int m,n;
     setup();
     while(!gover)
     {

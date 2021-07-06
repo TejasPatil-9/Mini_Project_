@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <unistd.h>
-int flag,gover;
+int flag;
 int input()
 {
     if(kbhit())

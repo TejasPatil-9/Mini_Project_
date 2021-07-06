@@ -8,8 +8,6 @@ int i,j,score;
 int x,y,fx,fy;
 int draw()
 {
-    x=h/2;
-    y=w/2;
     system("cls");
     for(i=0;i<h;i++)
     {

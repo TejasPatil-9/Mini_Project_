@@ -10,10 +10,6 @@
  */
 //to provide direction for the snake 
 #include "fun.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <unistd.h>
 int flag;
 int input()
 {

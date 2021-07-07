@@ -10,10 +10,6 @@
  */
 // to give fruit at different location
 #include "fun.h"
-#include <stdlib.h>
-#include <conio.h>
-#include <stdio.h>
-#include <unistd.h>
 int h=20,w=20;
 int x,y,fx,fy,score;
 void setup()

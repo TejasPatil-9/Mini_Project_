@@ -1,3 +1,13 @@
+/**
+ * @file draw.c
+ * @author K C Pooja (poojachandkc@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-07-07
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 //this to have the whole boundary of game
 #include <stdio.h>
 #include <stdlib.h>

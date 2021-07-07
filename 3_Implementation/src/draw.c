@@ -9,10 +9,6 @@
  * 
  */
 //this to have the whole boundary of game
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-#include <unistd.h>
 #include "fun.h"
 int i,j,score;
 int x,y,fx,fy;

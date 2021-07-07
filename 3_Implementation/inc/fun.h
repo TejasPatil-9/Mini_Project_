@@ -10,6 +10,10 @@
  */
 #ifndef __FUN_H
 #define __FUN_H
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <unistd.h>
 extern int h, w, fx, fy;
 extern int gover,x,y,flag;
 void setup();

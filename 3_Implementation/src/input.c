@@ -9,7 +9,7 @@
  * 
  */
 //to provide direction for the snake 
-#include "fun.h"
+#include "../inc/fun.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>

@@ -9,7 +9,7 @@
  * 
  */
 // to give fruit at different location
-#include "fun.h"
+#include "../inc/fun.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>

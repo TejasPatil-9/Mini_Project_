@@ -9,7 +9,7 @@
  * 
  */
 //this to have the whole boundary of game
-#include "fun.h"
+#include "../inc/fun.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>

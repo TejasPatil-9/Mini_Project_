@@ -1,0 +1,52 @@
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  #EXEC = out
+   endif
+endif
+
+PROJ_NAME = snakegame
+TEST_PROJ_NAME = $(PROJ_NAME)
+
+BUILD_DIR = Build
+
+SRC = src/test.c src/setup.c src/draw.c src/input.c src/logic.c
+INC = inc/fun.h 
+#PROJECT_OUTPUT = ./a.exe
+
+#all: $(SRC) $(INC)
+#gcc $(SRC) -O $(PROJECT_OUTPUT)
+
+#run:$(PROJ_NAME)
+#./$(PROJECT_OUTPUT)
+
+#TEST_SRC = testfile/TEST_quiz.c\
+#unity/unity.c
+
+#INC = -Iunity
+
+all: $(SRC) $(BUILD_DIR)
+	gcc $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+run: all
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+$(BUILD_DIR):
+	mkdir $(BUILD_DIR)
+
+analysis: all
+	cppcheck --enable=all $(SRC)
+	valgrind --leak-check=full $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
+coverage:
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(SRC)
+
+clean:
+	$(RM) $(call FixPath,$(BUILD_DIR)/*) *.gcda *.gcno *.gcov

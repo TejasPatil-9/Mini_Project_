@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <unistd.h>
-int flag;
+int flag=0;
 int input()
 {
     if(kbhit())
@@ -23,24 +23,28 @@ int input()
         {
             case 'j':
                 flag=1;
-                printf("Left");
+                printf("\nLeft\n");
                 break;
             case 'k':
                 flag=2;
-                printf("Down");
+                printf("\nDown\n");
                 break;
             case 'l':
                 flag=3;
-                printf("Right");
+                printf("\nRight\n");
                 break;
             case 'i':
                 flag=4;
-                printf("Up");
+                printf("\nUp\n");
                 break;
             case 'q':
                 gover=1;
-                printf("Why!! Lets Play another game...\n");
+                printf("\n..Thank You for Playing the Game..\n");
                 break;
+            default:
+                flag=0;
+                gover=1;
+                printf("\n..!Oops you pressed the wrong key..\n");
         }
     }
 }

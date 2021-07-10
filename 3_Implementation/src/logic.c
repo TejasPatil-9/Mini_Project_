@@ -18,7 +18,7 @@ int score;
 int x,y,flag;
 int logic()
 {
-    sleep(0.75);
+    sleep(0.5);
     switch(flag)
     {
         case 1:
@@ -39,7 +39,7 @@ int logic()
     if(x<0||x>h||y<0||y>w)
     {    
         gover=1;
-        printf("Niceee but You crossed the line!! Try another Game..");
+        printf("\n..!!Nice Try but You crossed the line!!..\n");
     }
     if(x==fx && y==fy)
     {

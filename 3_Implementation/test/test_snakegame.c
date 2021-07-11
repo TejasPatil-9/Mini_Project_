@@ -23,7 +23,6 @@ void test_draw(void)
 {
     TEST_PASS();
 }
-#ifdef TESTING
 int main(void)
 {
   UNITY_BEGIN();
@@ -33,4 +32,3 @@ int main(void)
   RUN_TEST(test_draw);
   return UNITY_END();
 }
-#endif

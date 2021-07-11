@@ -20,6 +20,7 @@ int draw()
 {
     system("cls");
     printf("...WELCOME TO THE SNAKE GAME...\n\n");
+    printf("...Instruction...\n I-Up\n J-Left\n K-Down \n L-Right\n Press one of these keys to start the game\n Let's Begin the Game\n");
     for(i=0;i<h;i++)
     {
         for(j=0;j<w;j++)
@@ -28,8 +29,9 @@ int draw()
             {
                 printf("-");
             }
-            else if(j==0||j==h-1)
+            else if(j==0||j==h-1){
                 printf("|");
+            }
             else 
             {
                 if(i==x && j==y)
@@ -42,7 +44,7 @@ int draw()
         }
         printf("\n");
     }
-    printf("\nYour Score:%d\n",score);
-    printf("\nPress Q to Quit the Game...\n");
+    printf("Your Score:%d\n",score);
+    printf("Press Q to Quit the Game...\n");
 }
 

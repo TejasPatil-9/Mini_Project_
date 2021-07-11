@@ -1,0 +1,11 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    "makefile.configurations": [
+    
+    ],
+    "files.associations": {
+        "fun.h": "c"
+    },
+    "C_Cpp.dimInactiveRegions": false
+}

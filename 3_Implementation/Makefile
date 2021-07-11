@@ -37,15 +37,6 @@ run: all
 
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
-
-analysis: all
-	cppcheck --enable=all $(SRC)
-	valgrind --leak-check=full $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-
-coverage:
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(SRC)
-
+	
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*) *.gcda *.gcno *.gcov

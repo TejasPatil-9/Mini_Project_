@@ -39,7 +39,7 @@ int logic()
     if(x<0||x>h||y<0||y>w)
     {    
         gover=1;
-        printf("\n..!!Nice Try but You crossed the line!!..\n");
+        printf("\n..!!Nice Try but You crossed the line!!..\n\n");
     }
     if(x==fx && y==fy)
     {

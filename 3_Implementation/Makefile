@@ -15,7 +15,7 @@ TEST_PROJ_NAME = $(PROJ_NAME)
 
 BUILD_DIR = Build
 
-SRC = src/test.c src/setup.c src/draw.c src/input.c src/logic.c
+SRC = main.c src/setup.c src/draw.c src/input.c src/logic.c
 INC = inc/fun.h -Iunity
 #PROJECT_OUTPUT = ./a.exe
 
@@ -37,6 +37,10 @@ run: all
 
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
-	
+
+testing: $(TEST_SRC)
+	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+
 clean:
 	$(RM) $(call FixPath,$(BUILD_DIR)/*) *.gcda *.gcno *.gcov

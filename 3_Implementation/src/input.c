@@ -39,12 +39,12 @@ int input()
                 break;
             case 'q':
                 gover=1;
-                printf("\n..Thank You for Playing the Game..\n");
+                printf("\n..Thank You for Playing the Game..\n\n");
                 break;
             default:
                 flag=0;
                 gover=1;
-                printf("\n..!Oops you pressed the wrong key..\n");
+                printf("\n..!Oops you pressed the wrong key..\n\n");
         }
     }
 }

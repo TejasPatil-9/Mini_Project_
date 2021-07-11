@@ -16,7 +16,7 @@ TEST_PROJ_NAME = $(PROJ_NAME)
 BUILD_DIR = Build
 
 SRC = src/test.c src/setup.c src/draw.c src/input.c src/logic.c
-INC = inc/fun.h 
+INC = inc/fun.h -Iunity
 #PROJECT_OUTPUT = ./a.exe
 
 #all: $(SRC) $(INC)
@@ -25,8 +25,7 @@ INC = inc/fun.h
 #run:$(PROJ_NAME)
 #./$(PROJECT_OUTPUT)
 
-#TEST_SRC = testfile/TEST_quiz.c\
-#unity/unity.c
+TEST_SRC = test/test_snakegame.c unity/unity.c
 
 #INC = -Iunity
 

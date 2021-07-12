@@ -6,5 +6,3 @@
 ![LINEC](https://github.com/KCPooja/Mini_Project_/blob/main/4_TestPlanAndOutput/otherkey.JPG)
 ### ☑️ When The Player Quits The Game
 ![QUIT_E](https://github.com/KCPooja/Mini_Project_/blob/main/4_TestPlanAndOutput/exit.JPG)
-### Demo of The Snake Game with Running Testfile
-![GAME_DEMO](https://github.com/KCPooja/Mini_Project_/blob/main/4_TestPlanAndOutput/Game%20Demo.mp4) 

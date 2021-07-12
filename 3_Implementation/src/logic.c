@@ -18,7 +18,7 @@ int score;
 int x,y,flag;
 int logic()
 {
-    sleep(0.5);
+    sleep(0.01);
     switch(flag)
     {
         case 1:

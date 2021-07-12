@@ -23,19 +23,19 @@ int input()
         {
             case 'j':
                 flag=1;
-                printf("\nLeft\n");
+                //printf("\nLeft\n");
                 break;
             case 'k':
                 flag=2;
-                printf("\nDown\n");
+                //printf("\nDown\n");
                 break;
             case 'l':
                 flag=3;
-                printf("\nRight\n");
+                //printf("\nRight\n");
                 break;
             case 'i':
                 flag=4;
-                printf("\nUp\n");
+                //printf("\nUp\n");
                 break;
             case 'q':
                 gover=1;
